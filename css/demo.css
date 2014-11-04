@@ -98,6 +98,15 @@ a{
 	color: #f8f8f8;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
+.container a {
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+	font-size: 60px;
+	background-color: #fff;
+	padding: 15px;
+}
+.container a:hover {
+	background-color: #f1f1f1;
+}
 /* Media Queries */
 @media screen and (max-width: 767px) {
 	.container > section{
