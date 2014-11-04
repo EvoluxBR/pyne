@@ -1,17 +1,17 @@
 .cb-slideshow,
-.cb-slideshow:after { 
+.cb-slideshow:after {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0px;
     left: 0px;
-    z-index: 0; 
+    z-index: 0;
 }
-.cb-slideshow:after { 
+.cb-slideshow:after {
     content: '';
-    background: transparent url(../images/pattern.png) repeat top left; 
+    background: transparent url(../images/pattern.png) repeat top left;
 }
-.cb-slideshow li span { 
+.cb-slideshow li span {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -21,16 +21,16 @@
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
-    opacity: 0;
+    /*opacity: 0;*/
     z-index: 0;
-	-webkit-backface-visibility: hidden;
+	/*-webkit-backface-visibility: hidden;
     -webkit-animation: imageAnimation 36s linear infinite 0s;
     -moz-animation: imageAnimation 36s linear infinite 0s;
     -o-animation: imageAnimation 36s linear infinite 0s;
     -ms-animation: imageAnimation 36s linear infinite 0s;
-    animation: imageAnimation 36s linear infinite 0s; 
+    animation: imageAnimation 36s linear infinite 0s;*/
 }
-div { 
+div {
     z-index: 1000;
     width: 100%;
     text-align: center;
@@ -39,60 +39,65 @@ div {
     -moz-animation: titleAnimation 2.5s ease-in normal;;
     -o-animation: titleAnimation 2.5s ease-in normal;;
     -ms-animation: titleAnimation 2.5s ease-in normal;;
-    animation: titleAnimation 2.5s ease-in normal; 
+    animation: titleAnimation 2.5s ease-in normal;
 }
-div h1 { 
+div h1 {
     font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
     font-size: 220px;
     padding: 0;
-    line-height: 200px; 
+    line-height: 200px;
 }
-.cb-slideshow li:nth-child(1) span { 
-    background-image: url(../images/1.jpg) 
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(../images/5.jpg);
 }
-.cb-slideshow li:nth-child(2) span { 
+
+/*.cb-slideshow li:nth-child(1) span {
+    background-image: url(../images/1.jpg)
+}
+.cb-slideshow li:nth-child(2) span {
     background-image: url(../images/2.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
     -ms-animation-delay: 6s;
-    animation-delay: 6s; 
+    animation-delay: 6s;
 }
-.cb-slideshow li:nth-child(3) span { 
+.cb-slideshow li:nth-child(3) span {
     background-image: url(../images/3.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
     -ms-animation-delay: 12s;
-    animation-delay: 12s; 
+    animation-delay: 12s;
 }
-.cb-slideshow li:nth-child(4) span { 
+.cb-slideshow li:nth-child(4) span {
     background-image: url(../images/4.jpg);
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
     -ms-animation-delay: 18s;
-    animation-delay: 18s; 
+    animation-delay: 18s;
 }
-.cb-slideshow li:nth-child(5) span { 
+.cb-slideshow li:nth-child(5) span {
     background-image: url(../images/5.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
     -ms-animation-delay: 24s;
-    animation-delay: 24s; 
+    animation-delay: 24s;
 }
-.cb-slideshow li:nth-child(6) span { 
+.cb-slideshow li:nth-child(6) span {
     background-image: url(../images/6.jpg);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
     -ms-animation-delay: 30s;
-    animation-delay: 30s; 
-}
+    animation-delay: 30s;
+}*/
 
 /* Animation for the slideshow images */
-@-webkit-keyframes imageAnimation { 
+@-webkit-keyframes imageAnimation {
     0% { opacity: 0;
     -webkit-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -101,7 +106,7 @@ div h1 {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-moz-keyframes imageAnimation { 
+@-moz-keyframes imageAnimation {
     0% { opacity: 0;
     -moz-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -110,7 +115,7 @@ div h1 {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-o-keyframes imageAnimation { 
+@-o-keyframes imageAnimation {
     0% { opacity: 0;
     -o-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -119,7 +124,7 @@ div h1 {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@-ms-keyframes imageAnimation { 
+@-ms-keyframes imageAnimation {
     0% { opacity: 0;
     -ms-animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -128,7 +133,7 @@ div h1 {
     25% { opacity: 0 }
     100% { opacity: 0 }
 }
-@keyframes imageAnimation { 
+@keyframes imageAnimation {
     0% { opacity: 0;
     animation-timing-function: ease-in; }
     8% { opacity: 1;
@@ -138,23 +143,23 @@ div h1 {
     100% { opacity: 0 }
 }
 /* Animation for the title */
-@-webkit-keyframes titleAnimation { 
+@-webkit-keyframes titleAnimation {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@-moz-keyframes titleAnimation { 
+@-moz-keyframes titleAnimation {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@-o-keyframes titleAnimation { 
+@-o-keyframes titleAnimation {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@-ms-keyframes titleAnimation { 
+@-ms-keyframes titleAnimation {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-@keyframes titleAnimation { 
+@keyframes titleAnimation {
     from { opacity: 0; }
     to { opacity: 1; }
 }
@@ -163,14 +168,23 @@ div h1 {
 	opacity: 1;
 }
 
-@media screen and (max-width: 1140px) { 
+@media screen and (max-width: 1140px) {
     div h1 { font-size: 140px }
 }
-@media screen and (max-width: 600px) { 
-    div h1 { 
+@media screen and (max-width: 600px) {
+    div h1 {
         font-size: 120px;
     }
     .container > section h2 {
         font-size: 30px;
     }
+}
+
+.button {
+    background: -webkit-linear-gradient(#FFF, #8EB68F);
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #2E542E;
 }

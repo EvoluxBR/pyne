@@ -9,7 +9,7 @@
     font-style: normal;
 }
 /* CSS reset */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
 	margin:0;
 	padding:0;
 }
@@ -21,7 +21,7 @@ table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
-fieldset,img { 
+fieldset,img {
 	border:0;
 }
 input{
@@ -69,7 +69,7 @@ a{
 .container{
 	position: relative;
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 .clr{
 	clear: both;
@@ -97,15 +97,6 @@ a{
 	font-style: italic;
 	color: #f8f8f8;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
-}
-.container a {
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-	font-size: 60px;
-	background-color: #fff;
-	padding: 15px;
-}
-.container a:hover {
-	background-color: #f1f1f1;
 }
 /* Media Queries */
 @media screen and (max-width: 767px) {
