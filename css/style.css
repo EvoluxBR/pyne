@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background: url(../images/pyne-2015-site.jpg) center center no-repeat fixed;
+  background-size: cover;
+  position: relative;
+}
+
+#float-content {
+  width: 400px;
+  margin-left: 5em;
+}
+
+#float-content .float-box {
+  width: 100%;
+  margin-bottom: 20px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#event-logo {
+  height: 450px;
+  text-align: center;
+}
+
+#event-logo .helper {
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#event-logo img {
+  vertical-align: middle;
+  max-height: 450px;
+  max-width: 320px;
+}
+
+#event-date {
+  height: 80px;
+  display: table;
+}
+
+#event-date span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  color: #1AA8D3;
+}
+
+#subscription-link {
+  background-color: #EE692D !important;
+  width: 320px !important;
+
+  height: 60px;
+  display: table;
+  margin: 0 auto;
+  padding: 5px 0px;
+  text-align: center;
+
+  border-bottom: 3px solid #9d4425;
+  box-shadow: inset 0 -3px #9d4425;
+}
+
+#subscription-link:active {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+#subscription-link a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 38px;
+  color: #FFF;
+
+}
+
+@media screen and (max-width: 767px) {
+  #float-content {
+    margin: 0 auto;
+  }
+}
