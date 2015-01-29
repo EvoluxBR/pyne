@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 0.03em;
   position: relative;
 }
 
@@ -60,27 +61,60 @@ body {
   width: 100%;
 }
 
-#subscriptions {
+#header {
   /*height: 100vh;*/
-  height: 600px;
+  height: 300px;
   
-  background: url('../images/pyne-2015-site.jpg') no-repeat center center fixed; 
+  background: url('../images/pyne-2015-site.jpg') no-repeat center -150px fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-#subscriptions .float-content {
-  width: 400px;
+#header h1 {
+    display: none;
+}
+
+#header .float-content {
+  width: 270px;
   margin-left: 5em;
 }
 
-#subscriptions .float-content .float-box {
+#header .float-content .float-box {
   width: 100%;
   margin-bottom: 20px;
 
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.7);
+  zoom: 0.6;
+}
+
+#subscription h4 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+
+#subscription p {
+    margin-top: 5px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#subscription #subscription-button .button {
+    display: inline-block;
+}
+
+#subscription #subscription-button {
+    text-align: right;
+    display: inline-block;
+    padding-top: 5px;
+}
+
+#subscription #subscription-button a {
+    display: inline-block;
 }
 
 #event-logo {
@@ -98,7 +132,8 @@ body {
   max-height: 450px;
   max-width: 320px;
 
-  margin-bottom: 10px; /* hotfix */
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
 
 #event-date {
@@ -115,9 +150,15 @@ body {
   color: #1AA8D3;
 }
 
+.section-header {
+    font-size: 40px;
+    margin: 0 0 15px 0;
+    padding: 0
+}
+
 .button {
   background-color: #EE692D !important;
-  width: 320px !important;
+  width: 320px;
 
   height: 60px;
   display: table;
@@ -144,8 +185,12 @@ body {
 
 }
 
+.row {
+    overflow: hidden;
+}
+
 @media screen and (max-width: 767px) {
-  #subscriptions .float-content {
+  #header .float-content {
     margin: 0 auto;
   }
 
@@ -158,27 +203,85 @@ body {
   }
 }
 
-#keynotes {
-  background-color: #E1E1E1;
+.dark-bg {
+    background-color: #F4F4F4;
 }
+
+#keynotes {}
 
 #keynotes .keynote {
-  margin: auto 0.5em;
+  margin: auto 1em;
+  text-align: center;
 }
-
 
 #keynotes .keynote img {
   width: 100%;
 }
 
-#grade {
+#keynotes .keynote h3 {
+  font-size: 30px;
+  margin: 0;
+  color: #15A8D4
+}
+
+#keynotes .keynote p {
+  margin-top: 0;
+  color: #666
+}
+
+#programacao {
   background-color: #FFFFFF;
 }
 
-#grade .day {
-  background: #E1E1E1; 
-  height: 600px; 
-  margin: auto 0.5em;
+#programacao h3 {
+    font-size: 25px;
+    background: #FAB814;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    margin: 0
+}
+
+#programacao .button {
+    float: right
+}
+
+#programacao .column {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#programacao .column img.banner-curso {
+    width: 100%;
+}
+
+#programacao .table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#programacao .table td {
+    border-bottom: 1px solid #DDD;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#programacao .table tr:last-child td {
+    border-bottom: none;
+}
+
+#programacao .table td:first-child {
+    width: 55px;
+    color: #BBB;
+}
+
+#programacao .table tr.muted td {
+    color: #BBB;
+}
+
+#programacao .table .keynote td:last-child {
+    color: #15A8D4;
+    font-size: 18px
 }
 
 #sponsors [class*='sponsor-'] {
@@ -203,30 +306,30 @@ body {
 }
 
 #sponsors .sponsor-platinum {
-  background: #E1E1E1; 
   height: 300px; 
   margin: auto 0.5em;
 }
 
 #sponsors .sponsor-gold {
-  background: #E1E1E1; 
-  height: 300px; 
+  height: 300px;
   margin: auto 0.5em;
 }
 
 #sponsors .sponsor-silver {
-  background: #E1E1E1; 
-  height: 300px; 
+  height: 300px;
   margin: auto 0.5em;
 }
 
 #sponsors .sponsor-bronze {
-  background: #E1E1E1; 
-  height: 300px; 
+  height: 300px;
   margin: auto 0.5em;
 }
 
+#call-to-action {}
 
-#call-to-action {
-  background-color: #E1E1E1;
+#call-to-action p {
+    width: 700px;
+    margin: 10px auto 30px;
+    text-align: center;
+    font-size: 25px;
 }
