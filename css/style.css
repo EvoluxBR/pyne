@@ -309,6 +309,11 @@ body {
   background-color: #FFFFFF;
 }
 
+#sponsors .sponsor-diamond {
+  height: 300px;
+  margin: auto 0.5em;
+}
+
 #sponsors .sponsor-platinum {
   height: 300px; 
   margin: auto 0.5em;
