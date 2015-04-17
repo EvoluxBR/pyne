@@ -186,11 +186,38 @@ body {
   text-transform: uppercase;
   font-size: 38px;
   color: #FFF;
-
 }
 
 .row {
     overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.primary {
+  color: #1AA8D3;
+  text-decoration: none;
+}
+
+.non-styled {
+  color: #000;
+}
+
+a.icon {
+  color: #1AA8D3;
+  text-decoration: none;
+  font-size: 24px;
+  margin: 0 2px;
+}
+
+a.icon:hover {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 767px) {
@@ -222,32 +249,39 @@ body {
   width: 100%;
 }
 
-#keynotes .keynote h3 {
+#keynotes .keynote h3,
+#speakers .speaker h3 {
   font-size: 30px;
   margin: 0;
   color: #15A8D4
 }
 
-#keynotes .keynote p {
+.keynote .description {
+  color: #000;
+  font-size: 0.8em;
+}
+
+#keynotes .keynote p,
+#speakers .speaker p {
   margin-top: 0;
   color: #666
 }
 
-#programacao {
-  background-color: #FFFFFF;
+#programacao h3 {
+  font-size: 25px;
+  background: #FAB814;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  margin: 0
 }
 
-#programacao h3 {
-    font-size: 25px;
-    background: #FAB814;
-    color: #FFF;
-    text-align: center;
-    padding: 10px;
-    margin: 0
+#programacao .talk {
+  font-size: 18px;
 }
 
 #programacao .button {
-    float: right
+  float: right
 }
 
 #programacao .column {
@@ -288,11 +322,11 @@ body {
     font-size: 18px
 }
 
-#sponsors [class*='sponsor-'] {
+#sponsors [class*='sponsor-'], #speakers .image {
   position: relative;
 }
 
-#sponsors img {  
+#sponsors img, #speakers img {  
     max-height: 100%;  
     max-width: 100%; 
     width: auto;
@@ -305,7 +339,7 @@ body {
     margin: auto;
 }
 
-#sponsors {
+#sponsors, #speakers {
   background-color: #FFFFFF;
 }
 
@@ -337,8 +371,16 @@ body {
 #call-to-action {}
 
 #call-to-action p {
-    width: 700px;
-    margin: 10px auto 30px;
-    text-align: center;
-    font-size: 25px;
+  width: 700px;
+  margin: 10px auto 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+#speakers .image {
+  margin: auto 0.5em;
+}
+
+#speakers .speaker p {
+  margin-bottom: 0;
 }
