@@ -209,6 +209,10 @@ body {
   color: #000;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 a.icon {
   color: #1AA8D3;
   text-decoration: none;
